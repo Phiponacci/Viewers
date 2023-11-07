@@ -94,9 +94,9 @@ function MyComponent() {
 
 ### Using outside of OHIF viewer
 
-OHIF Viewer already sets a main
+MCM RIS Viewer already sets a main
 [I18nextProvider](https://react.i18next.com/latest/i18nextprovider) connected to
-the shared i18n instance from `@ohif/i18n`, all extensions inside OHIF Viewer
+the shared i18n instance from `@ohif/i18n`, all extensions inside MCM RIS Viewer
 will share this same provider at the end, you don't need to set new providers at
 all.
 
@@ -297,7 +297,7 @@ detector config as parameter.
 
 ### Changing the language
 
-OHIF Viewer accepts a query param called `lng` in the url to change the
+MCM RIS Viewer accepts a query param called `lng` in the url to change the
 language.
 
 E.g.
@@ -326,7 +326,7 @@ REACT_APP_I18N_DEBUG=true yarn run dev
 
 ## Contributing with new languages
 
-We have integrated `i18next` into the OHIF Viewer and hooked it up with Locize
+We have integrated `i18next` into the MCM RIS Viewer and hooked it up with Locize
 for translation management. Now we need your help to get the app translated into
 as many languages as possible, and ensure that we haven't missed pieces of the
 app that need translation. Locize has graciously offered to provide us with free

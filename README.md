@@ -2,7 +2,7 @@
 <!-- markdownlint-disable -->
 <div align="center">
   <h1>OHIF Medical Imaging Viewer</h1>
-  <p><strong>The OHIF Viewer</strong> is a zero-footprint medical image viewer
+  <p><strong>The MCM RIS Viewer</strong> is a zero-footprint medical image viewer
 provided by the <a href="https://ohif.org/">Open Health Imaging Foundation (OHIF)</a>. It is a configurable and extensible progressive web application with out-of-the-box support for image archives which support <a href="https://www.dicomstandard.org/using/dicomweb/">DICOMweb</a>.</p>
 </div>
 
@@ -65,7 +65,7 @@ improving Extension System.
 
 ### Community & Experience
 
-The OHIF Viewer is a collaborative effort that has served as the basis for many
+The MCM RIS Viewer is a collaborative effort that has served as the basis for many
 active, production, and FDA Cleared medical imaging viewers. It benefits from
 our extensive community's collective experience, and from the sponsored
 contributions of individuals, research groups, and commercial organizations.
@@ -73,7 +73,7 @@ contributions of individuals, research groups, and commercial organizations.
 ### Built to Adapt
 
 After more than 8-years of integrating with many companies and organizations,
-The OHIF Viewer has been rebuilt from the ground up to better address the
+The MCM RIS Viewer has been rebuilt from the ground up to better address the
 varying workflow and configuration needs of its many users. All of the Viewer's
 core features are built using it's own extension system. The same extensibility
 that allows us to offer:
@@ -227,7 +227,7 @@ you'll see the following:
 
 ## Acknowledgments
 
-To acknowledge the OHIF Viewer in an academic publication, please cite
+To acknowledge the MCM RIS Viewer in an academic publication, please cite
 
 > _Open Health Imaging Foundation Viewer: An Extensible Open-Source Framework
 > for Building Web-Based Imaging Applications to Support Cancer Research_
@@ -263,7 +263,7 @@ under a
 
 [NCI Imaging Data Commons (IDC) project](https://imaging.datacommons.cancer.gov/) supported the development of new features and bug fixes marked with ["IDC:priority"](https://github.com/OHIF/Viewers/issues?q=is%3Aissue+is%3Aopen+label%3AIDC%3Apriority),
 ["IDC:candidate"](https://github.com/OHIF/Viewers/issues?q=is%3Aissue+is%3Aopen+label%3AIDC%3Acandidate) or ["IDC:collaboration"](https://github.com/OHIF/Viewers/issues?q=is%3Aissue+is%3Aopen+label%3AIDC%3Acollaboration). NCI Imaging Data Commons is supported by contract number 19X037Q from
-Leidos Biomedical Research under Task Order HHSN26100071 from NCI. [IDC Viewer](https://learn.canceridc.dev/portal/visualization) is a customized version of the OHIF Viewer.
+Leidos Biomedical Research under Task Order HHSN26100071 from NCI. [IDC Viewer](https://learn.canceridc.dev/portal/visualization) is a customized version of the MCM RIS Viewer.
 
 This project is tested with BrowserStack. Thank you for supporting open-source!
 

@@ -65,7 +65,7 @@ discussion and solutions.
 
 ### Do your Viewers have [510(k) Clearance](https://www.fda.gov/MedicalDevices/DeviceRegulationandGuidance/HowtoMarketYourDevice/PremarketSubmissions/PremarketNotification510k/) from the U.S. F.D.A or [CE Marking](https://ec.europa.eu/growth/single-market/ce-marking_en) from the European Commission?
 
-**NO.** The OHIF Viewer, Lesion Tracker, and Standalone Viewer, **NOT** F.D.A.
+**NO.** The MCM RIS Viewer, Lesion Tracker, and Standalone Viewer, **NOT** F.D.A.
 cleared or CE Marked. It is the users responsibility to ensure compliance with
 applicable rules and regulations. The
 [License](https://github.com/OHIF/Viewers/blob/master/LICENSE) for the OHIF
@@ -77,7 +77,7 @@ would be interested to hear about your experience.
 
 ### Are your Viewers [HIPAA](https://en.wikipedia.org/wiki/Health_Insurance_Portability_and_Accountability_Act) Compliant?
 
-**NO.** The OHIF Viewer, Lesion Tracker, and Standalone Viewer **DO NOT**
+**NO.** The MCM RIS Viewer, Lesion Tracker, and Standalone Viewer **DO NOT**
 fulfill all of the criteria to become HIPAA Compliant. It is the users
 responsibility to ensure compliance with applicable rules and regulations.
 

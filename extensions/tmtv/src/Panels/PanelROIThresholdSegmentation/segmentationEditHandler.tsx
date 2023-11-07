@@ -1,5 +1,6 @@
 import React from 'react';
 import { Input, Dialog, ButtonEnums } from '@ohif/ui';
+import i18n from '@ohif/i18n';
 
 function segmentationItemEditHandler({ id, servicesManager }) {
   const { segmentationService, uiDialogService } = servicesManager.services;
@@ -29,7 +30,7 @@ function segmentationItemEditHandler({ id, servicesManager }) {
     showOverlay: true,
     content: Dialog,
     contentProps: {
-      title: 'Enter your Segmentation',
+      title: i18n.t('Dialog:Enter your Segmentation'),
       noCloseButton: true,
       value: { label: segmentation.label || '' },
       body: ({ value, setValue }) => {
@@ -56,8 +57,8 @@ function segmentationItemEditHandler({ id, servicesManager }) {
         );
       },
       actions: [
-        { id: 'cancel', text: 'Cancel', type: ButtonEnums.type.secondary },
-        { id: 'save', text: 'Save', type: ButtonEnums.type.primary },
+        { id: 'cancel', text: i18n.t("Common:Cancel"), type: ButtonEnums.type.secondary },
+        { id: 'save', text: i18n.t("Common:Save"), type: ButtonEnums.type.primary },
       ],
       onSubmit: onSubmitHandler,
     },

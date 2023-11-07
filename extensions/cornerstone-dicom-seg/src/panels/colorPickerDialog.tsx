@@ -3,6 +3,7 @@ import { Dialog } from '@ohif/ui';
 import { ChromePicker } from 'react-color';
 
 import './colorPickerDialog.css';
+import i18n from '@ohif/i18n';
 
 function callColorPickerDialog(uiDialogService, rgbaColor, callback) {
   const dialogId = 'pick-color';
@@ -32,8 +33,8 @@ function callColorPickerDialog(uiDialogService, rgbaColor, callback) {
         noCloseButton: true,
         onClose: () => uiDialogService.dismiss({ id: dialogId }),
         actions: [
-          { id: 'cancel', text: 'Cancel', type: 'primary' },
-          { id: 'save', text: 'Save', type: 'secondary' },
+          { id: 'cancel', text: i18n.t('Common:Cancel'), type: 'primary' },
+          { id: 'save', text: i18n.t("Common:Save"), type: 'secondary' },
         ],
         onSubmit: onSubmitHandler,
         body: ({ value, setValue }) => {

@@ -1,14 +1,9 @@
 {
   "Browser": "Navegador",
-  "Build Number": "Número de compilación",
-  "Latest Master Commits": "Últimos Master Commits",
   "More details": "Más detalles",
   "Name": "Nombre",
-  "OHIF Viewer - About": "Sobre OHIF Viewer",
+  "MCM RIS Viewer - About": "Sobre MCM RIS Viewer",
   "OS": "SO",
-  "Report an issue": "Informar un problema",
-  "Repository URL": "URL del repositorio",
   "Value": "Valor",
-  "Version Information": "Información de la versión",
-  "Visit the forum": "Visita el foro"
+  "Version Information": "Información de la versión"
 }

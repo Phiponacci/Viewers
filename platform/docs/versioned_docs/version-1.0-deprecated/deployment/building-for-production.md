@@ -22,14 +22,14 @@ npm install --production
 
 ### Building
 
-There are two ways of building OHIF Viewer for a specific DICOM server: **Automatically** or **Manually**.
+There are two ways of building MCM RIS Viewer for a specific DICOM server: **Automatically** or **Manually**.
 
 For both, we use the `meteor build` (check it's [docs](https://guide.meteor.com/deployment.html#custom-deployment)) app and **Orthanc Dicom Web Server**.
 
 For `meteor build` it's necessary to inform an output folder `myOutputFolder`.
 **Remember to change `myOutputFolder` to your folder location.**
 
-OHIF Viewer will be built using **Orthanc DICOM Web server** configuration file `../config/orthancDICOMWeb.json` to set `METEOR_SETTINGS` environment var.
+MCM RIS Viewer will be built using **Orthanc DICOM Web server** configuration file `../config/orthancDICOMWeb.json` to set `METEOR_SETTINGS` environment var.
 
 *To run with another server, just point to the corresponding `.json` located in `config` folder or create your own.*
 
@@ -68,7 +68,7 @@ meteor build --directory myOutputFolder
 
 #### Build manually
 
-OHIF Viewer will be built normally, but with no DICOM Server information, which needs to be added when running the build. This is described in [Manually adding DICOM Server to the Viewer](#manually-adding-dicom-server-to-the-viewer).
+MCM RIS Viewer will be built normally, but with no DICOM Server information, which needs to be added when running the build. This is described in [Manually adding DICOM Server to the Viewer](#manually-adding-dicom-server-to-the-viewer).
 
 ##### Non-windows users
 

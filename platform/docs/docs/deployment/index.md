@@ -5,7 +5,7 @@ sidebar_label: Overview
 
 # Deployment
 
-The OHIF Viewer can be served as a stand-alone PWA ([progressive web
+The MCM RIS Viewer can be served as a stand-alone PWA ([progressive web
 application][pwa-url]) by building and hosting a collection of static assets or be embedded in other web applications via an iframe if needed. In
 either case, you will need to configure your instance of the Viewer so that it
 can connect to your data source (the database or PACS that provides the data
@@ -22,7 +22,7 @@ reach out to for help.
 
 ### Stand-alone Viewer
 
-Deploying the OHIF Viewer as a stand-alone web application provides many
+Deploying the MCM RIS Viewer as a stand-alone web application provides many
 benefits, but comes at the cost of time and complexity. Some benefits include:
 
 _Today:_
@@ -38,7 +38,7 @@ _In the future:_
 
 #### Hosted Static Assets
 
-At the end of the day, a production OHIF Viewer instance is a collection of
+At the end of the day, a production MCM RIS Viewer instance is a collection of
 HTML, CSS, JS, Font Files, and Images. We "build" those files from our
 `source code` with configuration specific to our project. We then make those
 files publicly accessible by hosting them on a Web Server.
@@ -47,7 +47,7 @@ files publicly accessible by hosting them on a Web Server.
 
 "Building", or creating, the files you will need is the same regardless of the
 web host you choose. You can find detailed instructions on how to configure and
-build the OHIF Viewer in our
+build the MCM RIS Viewer in our
 ["Build for Production" guide](./build-for-production.md).
 
 ##### Part 2 - Host Your App
@@ -83,7 +83,7 @@ Read more about how to use the iframe [here](./iframe.md).
 
 ## Data
 
-The OHIF Viewer is able to connect to any data source that implements the [DICOM
+The MCM RIS Viewer is able to connect to any data source that implements the [DICOM
 Web Standard][dicom-web-standard]. [DICOM Web][dicom-web] refers to RESTful
 DICOM Services -- a recently standardized set of guidelines for exchanging
 medical images and imaging metadata over the internet. Not all archives fully
@@ -91,7 +91,7 @@ support it yet, but it is gaining wider adoption.
 
 ### Configure Connection
 
-If you have an existing archive and intend to host the OHIF Viewer at the same
+If you have an existing archive and intend to host the MCM RIS Viewer at the same
 domain name as your archive, then connecting the two is as simple as following
 the steps laid out in our
 [Configuration Essentials Guide](./../configuration/configurationFiles.md).
@@ -103,7 +103,7 @@ We provide some guidance on configuring a local image archive in our
 guide. Hosting an archive remotely is a little trickier. You can check out some
 of our [advanced recipes](#recipes) for modeled setups that may work for you.
 
-#### What if I intend to host the OHIF Viewer at a different domain?
+#### What if I intend to host the MCM RIS Viewer at a different domain?
 
 There are two important steps to making sure this setup works:
 
@@ -263,7 +263,7 @@ Coming soon
 > you've gotten it right. Don't hesitate to work with professional auditors, or
 > [enlist help from experts](../help).
 
-The OHIF Viewer can be configured to work with authorization servers that
+The MCM RIS Viewer can be configured to work with authorization servers that
 support one or more of the OpenID-Connect authorization flows. The Viewer finds
 it's OpenID-Connect settings on the `oidc` configuration key. You can set these
 values following the instructions laid out in the

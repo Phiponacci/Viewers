@@ -1,0 +1,14 @@
+{
+  "ROI Threshold Configuration": "Configuration du seuil ROI",
+  "New Label": "Nouvelle étiquette",
+  "Run": "Executer",
+  "Reload Data": "Recharger les données",
+  "loading ...": "chargement ...",
+  "User Guide": "Mode d'emploi",
+  "Patient Sex": "Sexe de patient",
+  "Patient Weight (kg)": "Poids du patient (kg)",
+  "Total Dose (bq)": "Dose totale (bq)",
+  "Half Life (s)": "Demi-vie (s)",
+  "Injection Time (s)": "Temps d'injection (s)",
+  "Acquisition Time (s)": "Temps d'acquisition (s)"
+}

@@ -8,6 +8,8 @@ import 'react-dates/initialize';
 import 'react-dates/lib/css/_datepicker.css';
 import './DateRange.css';
 
+import { useTranslation } from 'react-i18next';
+
 const today = moment();
 const lastWeek = moment().subtract(7, 'day');
 const lastMonth = moment().subtract(1, 'month');
@@ -53,6 +55,7 @@ const DateRange = props => {
   const [focusedInput, setFocusedInput] = useState(null);
   const renderYearsOptionsCallback = useCallback(renderYearsOptions, []);
 
+
   const renderDatePresets = () => {
     return (
       <div className="PresetDateRangePicker_panel flex justify-between">
@@ -78,6 +81,7 @@ const DateRange = props => {
     );
   };
   const renderMonthElement = ({ month, onMonthSelect, onYearSelect }) => {
+
     renderMonthElement.propTypes = {
       month: PropTypes.object,
       onMonthSelect: PropTypes.func,
@@ -92,7 +96,7 @@ const DateRange = props => {
       onYearSelect(month, event.target.value);
     };
 
-    const handleOnBlur = () => {};
+    const handleOnBlur = () => { };
 
     return (
       <div className="flex justify-center">
@@ -130,6 +134,7 @@ const DateRange = props => {
   // Moment
   const parsedStartDate = startDate ? moment(startDate, 'YYYYMMDD') : null;
   const parsedEndDate = endDate ? moment(endDate, 'YYYYMMDD') : null;
+  const { t } = useTranslation("DatePicker");
 
   return (
     <DateRangePicker
@@ -149,8 +154,8 @@ const DateRange = props => {
       /** OPTIONAL */
       renderCalendarInfo={renderDatePresets}
       renderMonthElement={renderMonthElement}
-      startDatePlaceholderText={'Start Date'}
-      endDatePlaceholderText={'End Date'}
+      startDatePlaceholderText={t('Start Date')}
+      endDatePlaceholderText={t('End Date')}
       phrases={{
         closeDatePicker: 'Close',
         clearDates: 'Clear dates',

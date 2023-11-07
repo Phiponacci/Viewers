@@ -1,7 +1,7 @@
 {
-  "name": "OHIF Viewer",
+  "name": "MCM RIS Viewer",
   "short_name": "Viewer",
-  "description": "OHIF Viewer",
+  "description": "MCM RIS Viewer",
   "dir": "auto",
   "lang": "en-US",
   "orientation": "any",

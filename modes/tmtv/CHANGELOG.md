@@ -3,7 +3,7 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
-# [3.8.0-beta.0](https://github.com/OHIF/Viewers/compare/v3.7.0-beta.110...v3.8.0-beta.0) (2023-10-12)
+# [1.0.0-beta.0](https://github.com/OHIF/Viewers/compare/v3.7.0-beta.110...v1.0.0-beta.0) (2023-10-12)
 
 **Note:** Version bump only for package @ohif/mode-tmtv
 

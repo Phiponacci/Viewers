@@ -1,13 +1,15 @@
 import React from 'react';
 import { Input, Label, Select, LegacyButton, LegacyButtonGroup } from '@ohif/ui';
-import { useTranslation } from 'react-i18next';
+import { useTranslation, getI18n } from 'react-i18next';
 
 export const ROI_STAT = 'roi_stat';
 const RANGE = 'range';
 
+const i18n = getI18n()
+
 const options = [
   { value: ROI_STAT, label: 'Max', placeHolder: 'Max' },
-  { value: RANGE, label: 'Range', placeHolder: 'Range' },
+  { value: RANGE, label: i18n.t('ROIThresholdConfiguration:Range'), placeHolder: i18n.t('ROIThresholdConfiguration:Range') },
 ];
 
 function ROIThresholdConfiguration({ config, dispatch, runCommand }) {
@@ -88,7 +90,7 @@ function ROIThresholdConfiguration({ config, dispatch, runCommand }) {
                 >
                   <Label
                     className="text-white"
-                    text="Lower & Upper Ranges"
+                    text={t("Lower & Upper Ranges")}
                   ></Label>
                 </td>
               </tr>

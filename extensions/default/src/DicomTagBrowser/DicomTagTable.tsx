@@ -2,6 +2,7 @@ import React, { useCallback, useEffect, useRef, useState } from 'react';
 import { VariableSizeList as List } from 'react-window';
 import classNames from 'classnames';
 import debounce from 'lodash.debounce';
+import { useTranslation } from 'react-i18next';
 
 const lineHeightPx = 20;
 const lineHeightClassName = `leading-[${lineHeightPx}px]`;
@@ -14,6 +15,7 @@ const rowStyle = {
 };
 
 function ColumnHeaders({ tagRef, vrRef, keywordRef, valueRef }) {
+  const { t } = useTranslation('DicomTagBrowser');
   return (
     <div
       className={classNames(
@@ -26,7 +28,7 @@ function ColumnHeaders({ tagRef, vrRef, keywordRef, valueRef }) {
           ref={tagRef}
           className="flex flex-1 select-none flex-col pl-1 text-lg text-white"
         >
-          <span className="flex flex-row items-center focus:outline-none">Tag</span>
+          <span className="flex flex-row items-center focus:outline-none">{t("Tag")}</span>
         </label>
       </div>
       <div className="w-2/24 px-3">
@@ -42,7 +44,7 @@ function ColumnHeaders({ tagRef, vrRef, keywordRef, valueRef }) {
           ref={keywordRef}
           className="flex flex-1 select-none flex-col pl-1 text-lg text-white"
         >
-          <span className="flex flex-row items-center focus:outline-none">Keyword</span>
+          <span className="flex flex-row items-center focus:outline-none">{t("Keyword")}</span>
         </label>
       </div>
       <div className="w-5/24 grow px-3">
@@ -50,7 +52,7 @@ function ColumnHeaders({ tagRef, vrRef, keywordRef, valueRef }) {
           ref={valueRef}
           className="flex flex-1 select-none flex-col pl-1 text-lg text-white"
         >
-          <span className="flex flex-row items-center focus:outline-none">Value</span>
+          <span className="flex flex-row items-center focus:outline-none">{t("Value")}</span>
         </label>
       </div>
     </div>

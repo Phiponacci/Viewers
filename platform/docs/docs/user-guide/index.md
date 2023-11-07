@@ -9,7 +9,7 @@ sidebar_label: Study List
 
 The first page you will see when the viewer is loaded is the `Study List`. In
 this page you can explore all the studies that are stored on the configured
-server for the `OHIF Viewer`.
+server for the `MCM RIS Viewer`.
 
 ![user-study-list](../assets/img/user-study-list.png)
 

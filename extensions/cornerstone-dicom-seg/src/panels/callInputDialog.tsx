@@ -1,5 +1,6 @@
 import React from 'react';
 import { Input, Dialog, ButtonEnums } from '@ohif/ui';
+import { getI18n } from 'react-i18next';
 
 function callInputDialog(uiDialogService, label, callback) {
   const dialogId = 'enter-segment-label';
@@ -17,6 +18,7 @@ function callInputDialog(uiDialogService, label, callback) {
   };
 
   if (uiDialogService) {
+    const i18n = getI18n();
     uiDialogService.create({
       id: dialogId,
       centralize: true,
@@ -29,14 +31,14 @@ function callInputDialog(uiDialogService, label, callback) {
         noCloseButton: true,
         onClose: () => uiDialogService.dismiss({ id: dialogId }),
         actions: [
-          { id: 'cancel', text: 'Cancel', type: ButtonEnums.type.secondary },
-          { id: 'save', text: 'Confirm', type: ButtonEnums.type.primary },
+          { id: 'cancel', text: i18n.t("Common:Cancel"), type: ButtonEnums.type.secondary },
+          { id: 'save', text: i18n.t("Common:Confirm"), type: ButtonEnums.type.primary },
         ],
         onSubmit: onSubmitHandler,
         body: ({ value, setValue }) => {
           return (
             <Input
-              label="Enter the segment label"
+              label={i18n.t("Dialog:Enter the segment label")}
               labelClassName="text-white text-[14px] leading-[1.2]"
               autoFocus
               className="border-primary-main bg-black"

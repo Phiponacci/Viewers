@@ -10,6 +10,8 @@ import createReportDialogPrompt, {
 } from './createReportDialogPrompt';
 import createReportAsync from '../Actions/createReportAsync';
 import findSRWithSameSeriesDescription from '../utils/findSRWithSameSeriesDescription';
+import { getI18n, useTranslation } from 'react-i18next';
+const i18n = getI18n()
 
 const { downloadCSVReport } = utils;
 
@@ -146,7 +148,7 @@ export default function PanelMeasurementTable({
       }
       uiDialogService.dismiss({ id: 'enter-annotation' });
     };
-
+    const { t } = useTranslation("Dialog")
     uiDialogService.create({
       id: 'enter-annotation',
       centralize: true,
@@ -168,9 +170,10 @@ export default function PanelMeasurementTable({
               onSubmitHandler({ value, action: { id: 'save' } });
             }
           };
+
           return (
             <Input
-              label="Enter your annotation"
+              label={t('Dialog:Enter your annotation')}
               labelClassName="text-white text-[14px] leading-[1.2]"
               autoFocus
               id="annotation"
@@ -183,8 +186,8 @@ export default function PanelMeasurementTable({
           );
         },
         actions: [
-          { id: 'cancel', text: 'Cancel', type: ButtonEnums.type.secondary },
-          { id: 'save', text: 'Save', type: ButtonEnums.type.primary },
+          { id: 'cancel', text: i18n.t('Common:Cancel'), type: ButtonEnums.type.secondary },
+          { id: 'save', text: i18n.t('Common:Save'), type: ButtonEnums.type.primary },
         ],
         onSubmit: onSubmitHandler,
       },
@@ -259,7 +262,7 @@ function _mapMeasurementToDisplay(measurement, index, types) {
   } = measurement;
 
   const firstSite = findingSites?.[0];
-  const label = baseLabel || finding?.text || firstSite?.text || '(empty)';
+  const label = baseLabel || finding?.text || firstSite?.text || `(${i18n.t("Common:empty")})`;
   let displayText = baseDisplayText || [];
   if (findingSites) {
     const siteText = [];

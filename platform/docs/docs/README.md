@@ -64,7 +64,7 @@ Check out these helpful links:
 
 ## Citing OHIF
 
-To cite the OHIF Viewer in an academic publication, please cite
+To cite the MCM RIS Viewer in an academic publication, please cite
 
 > _Open Health Imaging Foundation Viewer: An Extensible Open-Source Framework
 > for Building Web-Based Imaging Applications to Support Cancer Research_

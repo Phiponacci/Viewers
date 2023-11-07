@@ -6,6 +6,8 @@ import {
   WindowLevelMenuItem,
 } from '@ohif/ui';
 import { defaults } from '@ohif/core';
+import { getI18n } from 'react-i18next';
+const i18n = getI18n();
 
 const { windowLevelPresets } = defaults;
 /**
@@ -197,11 +199,11 @@ const toolbarButtons = [
       isAction: true, // ?
       renderer: WindowLevelMenuItem,
       items: [
-        _createWwwcPreset(1, 'Soft tissue', '400 / 40'),
-        _createWwwcPreset(2, 'Lung', '1500 / -600'),
-        _createWwwcPreset(3, 'Liver', '150 / 90'),
-        _createWwwcPreset(4, 'Bone', '2500 / 480'),
-        _createWwwcPreset(5, 'Brain', '80 / 40'),
+        _createWwwcPreset(1, i18n.t('Buttons:Soft tissue'), '400 / 40'),
+        _createWwwcPreset(2, i18n.t('Buttons:Lung'), '1500 / -600'),
+        _createWwwcPreset(3, i18n.t('Buttons:Liver'), '150 / 90'),
+        _createWwwcPreset(4, i18n.t('Buttons:Bone'), '2500 / 480'),
+        _createWwwcPreset(5, i18n.t('Buttons:Brain'), '80 / 40'),
       ],
     },
   },

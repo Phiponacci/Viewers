@@ -33,7 +33,7 @@ Creates a symlink from the global directory to the application's node_modules.
 
 # Tutorial for linking Cornerstone3D to OHIF
 
-Below we demonstrate how to link Cornerstone3D to OHIF Viewer. This is useful for testing and debugging Cornerstone3D in the context of OHIF Viewer.
+Below we demonstrate how to link Cornerstone3D to MCM RIS Viewer. This is useful for testing and debugging Cornerstone3D in the context of MCM RIS Viewer.
 
 <div style={{padding:"56.25% 0 0 0", position:"relative"}}>
     <iframe src="https://player.vimeo.com/video/849096279?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameBorder="0" allow="autoplay; fullscreen; picture-in-picture" allowFullScreen style= {{ position:"absolute",top:0,left:0,width:"100%",height:"100%"}} title="measurement-report"></iframe>

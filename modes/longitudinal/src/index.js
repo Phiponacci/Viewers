@@ -3,6 +3,8 @@ import toolbarButtons from './toolbarButtons';
 import { id } from './id';
 import initToolGroups from './initToolGroups';
 
+import i18n from '@ohif/i18n';
+
 // Allow this mode by excluding non-imaging modalities such as SR, SEG
 // Also, SM is not a simple imaging modalities, so exclude it.
 const NON_IMAGE_MODALITIES = ['SM', 'ECG', 'SR', 'SEG', 'RTSTRUCT'];
@@ -64,7 +66,7 @@ function modeFactory({ modeConfiguration }) {
     // We should not be.
     id,
     routeName: 'viewer',
-    displayName: 'Basic Viewer',
+    displayName: i18n.t('Modes:Basic Viewer'),
     /**
      * Lifecycle hooks
      */

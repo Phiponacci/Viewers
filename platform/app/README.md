@@ -34,14 +34,14 @@
 
 Building a web based medical imaging viewer from scratch is time intensive, hard
 to get right, and expensive. Instead of re-inventing the wheel, you can use the
-OHIF Viewer as a rock solid platform to build on top of. The Viewer is a
+MCM RIS Viewer as a rock solid platform to build on top of. The Viewer is a
 [React][react-url] [Progressive Web Application][pwa-url] that can be embedded
 in existing applications via it's [packaged source
 (ohif-viewer)][ohif-viewer-url] or hosted stand-alone. The Viewer exposes
 [configuration][configuration-url] and [extensions][extensions-url] to support
 workflow customization and advanced functionality at common integration points.
 
-If you're interested in using the OHIF Viewer, but you're not sure it supports
+If you're interested in using the MCM RIS Viewer, but you're not sure it supports
 your use case [check out our docs](https://docs.ohif.org/). Still not sure, or
 you would like to propose new features? Don't hesitate to
 [create an issue](https://github.com/OHIF/Viewers/issues) or open a pull

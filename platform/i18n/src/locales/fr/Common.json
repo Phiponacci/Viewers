@@ -5,6 +5,15 @@
   "Next": "Suivant",
   "Play": "Play",
   "Previous": "Précédent",
-  "Reset": "Reset",
-  "Stop": "Stop"
+  "Reset": "Réinitialiser",
+  "Stop": "Arrêt",
+  "Save": "Sauvgarder",
+  "Confirm": "Confirmer",
+  "Cancel": "Annuler",
+  "Yes": "Oui",
+  "No": "Non",
+  "No, do not ask again": "Non, ne demande plus",
+  "empty": "vide",
+  "Loading": "Chargement",
+  "Rename": "Renommer"
 }

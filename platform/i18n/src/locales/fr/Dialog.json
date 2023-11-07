@@ -1,0 +1,15 @@
+{
+  "Download High Quality Image": "Télécharger une image de haute qualité",
+  "Enter your annotation": "Entrez votre annotation",
+  "Enter your Segmentation": "Entrez votre Segmentation",
+  "Provide a name for your report": "Donnez un nom à votre rapport",
+  "Enter the report name": "Entrez le nom du rapport",
+  "Enter the segment label": "Entrez le libellé du segment",
+  "No, do not ask again for this series": "Non, ne redemandez pas cette série",
+  "No, discard previously tracked series & measurements": "Non, supprimez les séries et mesures précédemment suivies",
+  "Measurements cannot span across multiple studies. Do you want to save your tracked measurements?": "Les mesures ne peuvent pas s’étendre sur plusieurs études. Voulez-vous enregistrer vos mesures suivies?",
+  "saved successfully": "enregistré avec succès",
+  "Failed to store": "Échec du stockage de",
+  "RectangleROI Threshold Tip": "Astuce pour le seuil RectangleROI",
+  "RectangleROI Threshold tool should be used on PT Axial Viewport": "L'outil de seuil RectangleROI doit être utilisé sur la fenêtre d'affichage axiale PT"
+}

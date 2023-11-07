@@ -1,5 +1,7 @@
 import React from 'react';
 import { DicomMetadataStore } from '@ohif/core';
+import { getI18n } from 'react-i18next';
+import i18n from '@ohif/i18n';
 
 /**
  *
@@ -13,7 +15,7 @@ async function createReportAsync({ servicesManager, getReport, reportType = 'mea
     centralize: true,
     content: Loading,
   });
-
+  const i18n = getI18n();
   try {
     const naturalizedReport = await getReport();
 
@@ -27,16 +29,16 @@ async function createReportAsync({ servicesManager, getReport, reportType = 'mea
     const displaySetInstanceUID = displaySet.displaySetInstanceUID;
 
     uiNotificationService.show({
-      title: 'Create Report',
-      message: `${reportType} saved successfully`,
+      title: i18n.t('MeasurementTable:Create Report'),
+      message: `${reportType} ${i18n.t("Dialog:saved successfully")}`,
       type: 'success',
     });
 
     return [displaySetInstanceUID];
   } catch (error) {
     uiNotificationService.show({
-      title: 'Create Report',
-      message: error.message || `Failed to store ${reportType}`,
+      title: i18n.t('MeasurementTable:Create Report'),
+      message: error.message || `${i18n.t("Dialog:Failed to store")} ${reportType}`,
       type: 'error',
     });
   } finally {
@@ -45,7 +47,7 @@ async function createReportAsync({ servicesManager, getReport, reportType = 'mea
 }
 
 function Loading() {
-  return <div className="text-primary-active">Loading...</div>;
+  return <div className="text-primary-active">{i18n.t("Common:Loading")}...</div>;
 }
 
 export default createReportAsync;

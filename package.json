@@ -1,5 +1,5 @@
 {
-  "name": "ohif-monorepo-root",
+  "name": "mcm-rism",
   "private": true,
   "workspaces": {
     "packages": [

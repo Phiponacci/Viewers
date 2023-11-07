@@ -2,6 +2,7 @@ import React from 'react';
 import { ServicesManager, CommandsManager, ExtensionManager } from '@ohif/core';
 import { useViewportGrid } from '@ohif/ui';
 import MicroscopyPanel from './components/MicroscopyPanel/MicroscopyPanel';
+import { getI18n } from 'react-i18next';
 
 // TODO:
 // - No loading UI exists yet
@@ -24,22 +25,22 @@ export default function getPanelModule({
       <MicroscopyPanel
         viewports={viewports}
         activeViewportId={activeViewportId}
-        onSaveComplete={() => {}}
-        onRejectComplete={() => {}}
+        onSaveComplete={() => { }}
+        onRejectComplete={() => { }}
         commandsManager={commandsManager}
         servicesManager={servicesManager}
         extensionManager={extensionManager}
       />
     );
   };
-
+  const i18n = getI18n();
   return [
     {
       name: 'measure',
       iconName: 'tab-linear',
+      label: i18n.t("MeasurementTable:Measurements"),
       iconLabel: 'Measure',
-      label: 'Measurements',
-      secondaryLabel: 'Measurements',
+      secondaryLabel: i18n.t("MeasurementTable:Measurements"),
       component: wrappedMeasurementPanel,
     },
   ];

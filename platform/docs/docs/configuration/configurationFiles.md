@@ -7,7 +7,7 @@ sidebar_label: Configuration Files
 
 After following the steps outlined in
 [Getting Started](./../development/getting-started.md), you'll notice that the
-OHIF Viewer has data for several studies and their images. You didn't add this
+MCM RIS Viewer has data for several studies and their images. You didn't add this
 data, so where is it coming from?
 
 By default, the viewer is configured to connect to a Amazon S3 bucket that is hosting

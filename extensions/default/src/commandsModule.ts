@@ -10,6 +10,7 @@ import findViewportsByPosition, {
 import { ContextMenuProps } from './CustomizableContextMenu/types';
 import { NavigateHistory } from './types/commandModuleTypes';
 import { history } from '@ohif/app';
+import { getI18n } from 'react-i18next';
 
 const { subscribeToNextViewportGridChange } = utils;
 
@@ -508,6 +509,8 @@ const commandsModule = ({
     },
 
     openDICOMTagViewer() {
+      const i18n = getI18n();
+      //const { t } = useTranslation('DicomTagBrowser');
       const { activeViewportId, viewports } = viewportGridService.getState();
       const activeViewportSpecificData = viewports.get(activeViewportId);
       const { displaySetInstanceUIDs } = activeViewportSpecificData;
@@ -523,7 +526,7 @@ const commandsModule = ({
           displaySetInstanceUID,
           onClose: UIModalService.hide,
         },
-        title: 'DICOM Tag Browser',
+        title: i18n.t('DicomTagBrowser:DICOM Tag Browser'),
       });
     },
 

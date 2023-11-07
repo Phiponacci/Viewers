@@ -2,7 +2,7 @@ import { create } from '@storybook/theming';
 
 export default create({
   base: 'light',
-  brandTitle: 'OHIF',
+  brandTitle: 'MCM',
   brandUrl: 'https://ohif.org',
-  brandImage: 'ohif-logo-light.svg',
+  brandImage: 'mcm-logo-light.svg',
 });

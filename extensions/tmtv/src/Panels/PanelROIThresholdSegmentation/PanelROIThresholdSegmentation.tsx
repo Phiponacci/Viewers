@@ -165,7 +165,6 @@ export default function PanelRoiThresholdSegmentation({ servicesManager, command
 
     handleTMTVCalculation();
   }, [segmentations, selectedSegmentationId]);
-
   return (
     <>
       <div className="flex flex-col">
@@ -182,9 +181,9 @@ export default function PanelRoiThresholdSegmentation({ servicesManager, command
                 });
               }}
             >
-              {labelmapLoading ? 'loading ...' : 'New Label'}
+              {labelmapLoading ? t('loading ...') : t('New Label')}
             </Button>
-            <Button onClick={handleROIThresholding}>Run</Button>
+            <Button onClick={handleROIThresholding}>{t("Run")}</Button>
           </div>
           <div
             className="bg-secondary-dark border-secondary-light mb-2 flex h-8 cursor-pointer select-none items-center justify-around border-t outline-none first:border-0"
@@ -263,7 +262,7 @@ export default function PanelRoiThresholdSegmentation({ servicesManager, command
           name={'info'}
           className={'text-primary-active ml-4 mr-3'}
         />
-        <span>{'User Guide'}</span>
+        <span>{t("User Guide")}</span>
       </div>
     </>
   );

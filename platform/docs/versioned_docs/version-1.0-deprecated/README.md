@@ -14,15 +14,15 @@ medical images. It is built with Meteor, a Node.js-based full-stack JavaScript
 platform.
 
 This documentation concerns the OHIF framework itself and its three example
-applications: the OHIF Viewer, Lesion Tracker, and the Standalone Viewer.
+applications: the MCM RIS Viewer, Lesion Tracker, and the Standalone Viewer.
 
-## The **OHIF Viewer**: A general purpose DICOM Viewer ([demo](http://viewer.ohif.org/))
+## The **MCM RIS Viewer**: A general purpose DICOM Viewer ([demo](http://viewer.ohif.org/))
 
-![OHIF Viewer Screenshot](./assets/img/viewer.png)
+![MCM RIS Viewer Screenshot](./assets/img/viewer.png)
 
 The Open Health Imaging Foundation intends to provide a simple general purpose
 DICOM Viewer which can be easily extended for specific uses. The primary purpose
-of the OHIF Viewer is to serve as a testing ground for the underlying packages
+of the MCM RIS Viewer is to serve as a testing ground for the underlying packages
 and the [Cornerstone](https://cornerstonejs.org/) family of libraries.
 
 ## **Lesion Tracker**: An oncology-focused imaging application ([demo](http://lesiontracker.ohif.org/))
@@ -43,7 +43,7 @@ DICOM Messages).
 
 ## Standalone Viewer ([demo](https://ohif-viewer.s3-website.eu-central-1.amazonaws.com/?url=https://raw.githubusercontent.com/OHIF/Viewers/master/StandaloneViewer/etc/sampleDICOM.json))
 
-The Standalone Viewer offers only the client-side portions of the OHIF Viewer
+The Standalone Viewer offers only the client-side portions of the MCM RIS Viewer
 with the Study List pages removed. This single-page viewer can be hosted as a
 static site (e.g. on Amazon S3, Azure Blob Storage, or Github Pages), and easily
 integrated with existing back-end DICOM storage systems. Alternative

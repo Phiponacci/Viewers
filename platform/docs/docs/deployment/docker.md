@@ -4,7 +4,7 @@ sidebar_position: 4
 
 # Docker
 
-The OHIF source code provides a [Dockerfile](https://github.com/OHIF/Viewers/blob/master/Dockerfile) to create and run a Docker image that containerizes an [nginx](https://www.nginx.com/) web server serving the OHIF Viewer.
+The OHIF source code provides a [Dockerfile](https://github.com/OHIF/Viewers/blob/master/Dockerfile) to create and run a Docker image that containerizes an [nginx](https://www.nginx.com/) web server serving the MCM RIS Viewer.
 
 :::info
 This Dockerfile is the same used to generate the [OHIF image(s) on Docker Hub](https://hub.docker.com/r/ohif/app/tags).
@@ -14,12 +14,12 @@ This Dockerfile is the same used to generate the [OHIF image(s) on Docker Hub](h
 ## Prerequisites
 The machine on which to build and run the Docker container must have:
 1. All of the [requirements](./build-for-production.md#build-for-production) for building a production version of OHIF.
-2. A checked out branch of the OHIF Viewer.
+2. A checked out branch of the MCM RIS Viewer.
 3. [Docker](https://docs.docker.com/get-docker/) installed.
 
 ## Building the Docker Image
 The docker image can be built from a terminal window as such:
-1. Switch to the OHIF Viewer code root directory.
+1. Switch to the MCM RIS Viewer code root directory.
 2. Issue the following Docker command. Note that what follows `-t` flag is the `{name}:{tag}` for the Docker image and is arbitrary when creating a local Docker image.
 
     ```sh

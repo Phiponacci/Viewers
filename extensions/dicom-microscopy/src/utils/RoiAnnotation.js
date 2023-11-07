@@ -1,6 +1,9 @@
+import { getI18n } from 'react-i18next';
 import areaOfPolygon from './areaOfPolygon';
 
 import { PubSubService } from '@ohif/core';
+
+const i18n = getI18n();
 
 const EVENTS = {
   LABEL_UPDATED: 'labelUpdated',
@@ -168,7 +171,7 @@ class RoiAnnotation extends PubSubService {
    * @returns {String} Text with geometry type and label
    */
   getDetailedLabel() {
-    const label = this.label ? `${this.label}` : '(empty)';
+    const label = this.label ? `${this.label}` : `(${i18n.t('Common:empty')})`;
     return label;
   }
 

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { ServicesManager, ExtensionManager, CommandsManager, DicomMetadataStore } from '@ohif/core';
 import { MeasurementTable, Icon, ButtonGroup, Button } from '@ohif/ui';
-import { withTranslation, WithTranslation } from 'react-i18next';
+import { useTranslation, withTranslation, WithTranslation } from 'react-i18next';
 import { EVENTS as MicroscopyEvents } from '../../services/MicroscopyService';
 import dcmjs from 'dcmjs';
 import styles from '../../utils/styles';
@@ -323,7 +323,7 @@ function MicroscopyPanel(props: IMicroscopyPanelProps) {
   });
 
   const disabled = data.length === 0;
-
+  const { t } = useTranslation("MeasurementTable")
   return (
     <>
       <div
@@ -331,7 +331,7 @@ function MicroscopyPanel(props: IMicroscopyPanelProps) {
         data-cy={'measurements-panel'}
       >
         <MeasurementTable
-          title="Measurements"
+          title={t("Measurements")}
           servicesManager={props.servicesManager}
           data={data}
           onClick={onMeasurementItemClickHandler}

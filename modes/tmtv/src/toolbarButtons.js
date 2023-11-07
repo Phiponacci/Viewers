@@ -3,7 +3,9 @@
 import { WindowLevelMenuItem } from '@ohif/ui';
 import { defaults } from '@ohif/core';
 import { toolGroupIds } from './initToolGroups';
+import { getI18n } from 'react-i18next';
 const { windowLevelPresets } = defaults;
+const i18n = getI18n();
 /**
  *
  * @param {*} type - 'tool' | 'action' | 'toggle'
@@ -233,11 +235,11 @@ const toolbarButtons = [
       isAction: true, // ?
       renderer: WindowLevelMenuItem,
       items: [
-        _createWwwcPreset(1, 'Soft tissue', '400 / 40'),
-        _createWwwcPreset(2, 'Lung', '1500 / -600'),
-        _createWwwcPreset(3, 'Liver', '150 / 90'),
-        _createWwwcPreset(4, 'Bone', '2500 / 480'),
-        _createWwwcPreset(5, 'Brain', '80 / 40'),
+        _createWwwcPreset(1, i18n.t('Buttons:Soft tissue'), '400 / 40'),
+        _createWwwcPreset(2, i18n.t('Buttons:Lung'), '1500 / -600'),
+        _createWwwcPreset(3, i18n.t('Buttons:Liver'), '150 / 90'),
+        _createWwwcPreset(4, i18n.t('Buttons:Bone'), '2500 / 480'),
+        _createWwwcPreset(5, i18n.t('Buttons:Brain'), '80 / 40'),
       ],
     },
   },
@@ -282,14 +284,14 @@ const toolbarButtons = [
     props: {
       type: 'tool',
       icon: 'tool-create-threshold',
-      label: 'Rectangle ROI Threshold',
+      label: i18n.t('Buttons:Rectangle ROI Threshold'),
       commands: [
         ..._createCommands('setToolActive', 'RectangleROIStartEndThreshold', [toolGroupIds.PT]),
         {
           commandName: 'displayNotification',
           commandOptions: {
-            title: 'RectangleROI Threshold Tip',
-            text: 'RectangleROI Threshold tool should be used on PT Axial Viewport',
+            title: i18n.t('Dialog:RectangleROI Threshold Tip'),
+            text: i18n.t('Dialog:RectangleROI Threshold tool should be used on PT Axial Viewport'),
             type: 'info',
           },
         },
@@ -310,15 +312,15 @@ const toolbarButtons = [
       primary: _createToolButton(
         'fusionPTColormap',
         'tool-fusion-color',
-        'Fusion PT Colormap',
+        i18n.t('Buttons:Fusion PT Colormap'),
         [],
-        'Fusion PT Colormap'
+        i18n.t('Buttons:Fusion PT Colormap')
       ),
       secondary: {
         icon: 'chevron-down',
         label: 'PT Colormap',
         isActive: true,
-        tooltip: 'PET Image Colormap',
+        tooltip: i18n.t('Buttons:PET Image Colormap'),
       },
       isAction: true, // ?
       items: [

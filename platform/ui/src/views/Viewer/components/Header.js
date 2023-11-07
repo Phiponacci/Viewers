@@ -16,7 +16,7 @@ const Header = () => {
               href="#"
               className="ml-4"
             >
-              <Svg name="logo-ohif" />
+              <Svg name="logo-mcm" />
             </a>
           </div>
         </div>

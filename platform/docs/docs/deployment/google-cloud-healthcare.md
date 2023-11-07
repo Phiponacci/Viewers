@@ -121,7 +121,7 @@ Images can even be transcoded on the fly if this is desired.
 
 1. Open the `config/google.js` file and change `YOURCLIENTID` to your Client ID
    value.
-1. Run the OHIF Viewer using the config/google.js configuration file
+1. Run the MCM RIS Viewer using the config/google.js configuration file
 
 ```bash
 cd OHIFViewer

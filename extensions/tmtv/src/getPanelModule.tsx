@@ -1,6 +1,7 @@
 import React from 'react';
 import { PanelPetSUV, PanelROIThresholdSegmentation } from './Panels';
-
+import { getI18n } from 'react-i18next'
+const i18n = getI18n();
 // TODO:
 // - No loading UI exists yet
 // - cancel promises when component is destroyed
@@ -39,7 +40,7 @@ function getPanelModule({ commandsManager, extensionManager, servicesManager }) 
       name: 'ROIThresholdSeg',
       iconName: 'tab-roi-threshold',
       iconLabel: 'ROI Threshold',
-      label: 'ROI Threshold',
+      label: i18n.t("Buttons:ROI Threshold"),
       component: wrappedROIThresholdSeg,
     },
   ];

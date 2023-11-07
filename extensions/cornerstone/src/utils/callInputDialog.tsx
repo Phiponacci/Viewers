@@ -1,6 +1,6 @@
 import React from 'react';
 import { Input, Dialog, ButtonEnums } from '@ohif/ui';
-
+import { getI18n } from 'react-i18next'
 /**
  *
  * @param {*} data
@@ -20,11 +20,12 @@ function callInputDialog(
   isArrowAnnotateInputDialog = true,
   dialogConfig: any = {}
 ) {
+  const i18n = getI18n()
   const dialogId = 'dialog-enter-annotation';
   const label = data ? (isArrowAnnotateInputDialog ? data.text : data.label) : '';
   const {
     dialogTitle = 'Annotation',
-    inputLabel = 'Enter your annotation',
+    inputLabel = i18n.t('Dialog:Enter your annotation'),
     validateFunc = value => true,
   } = dialogConfig;
 
@@ -57,8 +58,8 @@ function callInputDialog(
         noCloseButton: true,
         onClose: () => uiDialogService.dismiss({ id: dialogId }),
         actions: [
-          { id: 'cancel', text: 'Cancel', type: ButtonEnums.type.secondary },
-          { id: 'save', text: 'Save', type: ButtonEnums.type.primary },
+          { id: 'cancel', text: i18n.t('Common:Cancel'), type: ButtonEnums.type.secondary },
+          { id: 'save', text: i18n.t('Common:Save'), type: ButtonEnums.type.primary },
         ],
         onSubmit: onSubmitHandler,
         body: ({ value, setValue }) => {

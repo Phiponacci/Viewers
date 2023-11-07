@@ -53,7 +53,7 @@ function ViewerHeader({ hotkeysManager, extensionManager, servicesManager }) {
       onClick: () =>
         show({
           content: AboutModal,
-          title: 'About OHIF Viewer',
+          title: t('AboutModal:About MCM RIS Viewer'),
           contentProps: { versionNumber, commitHash },
         }),
     },

@@ -1,5 +1,5 @@
 # OHIF extension for microscopy
-Adapter for *DICOM Microscopy Viewer* to get it integrated into OHIF Viewer.
+Adapter for *DICOM Microscopy Viewer* to get it integrated into MCM RIS Viewer.
 
 ## Acknowledgements
 

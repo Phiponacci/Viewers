@@ -2,6 +2,7 @@ import React, { useEffect, useState, useCallback } from 'react';
 import PropTypes from 'prop-types';
 import { LayoutSelector as OHIFLayoutSelector, ToolbarButton } from '@ohif/ui';
 import { ServicesManager } from '@ohif/core';
+import { useTranslation } from 'react-i18next';
 
 function ToolbarLayoutSelectorWithServices({ servicesManager, ...props }) {
   const { toolbarService } = servicesManager.services;
@@ -48,11 +49,11 @@ function LayoutSelector({ rows, columns, className, onSelection, ...rest }) {
 
   const onInteractionHandler = () => setIsOpen(!isOpen);
   const DropdownContent = isOpen ? OHIFLayoutSelector : null;
-
+  const { t } = useTranslation("Buttons")
   return (
     <ToolbarButton
       id="Layout"
-      label="Grid Layout"
+      label={t("Grid Layout")}
       icon="tool-layout"
       onInteraction={onInteractionHandler}
       className={className}
@@ -82,7 +83,7 @@ LayoutSelector.propTypes = {
 LayoutSelector.defaultProps = {
   rows: 3,
   columns: 3,
-  onLayoutChange: () => {},
+  onLayoutChange: () => { },
 };
 
 export default ToolbarLayoutSelectorWithServices;

@@ -1,12 +1,12 @@
 import React from 'react';
 import { Svg } from '../../../components';
 
-function OHIFLogo() {
+function MCMLogo() {
   return (
     <React.Fragment>
-      <Svg name="logo-ohif" />
+      <Svg name="logo-mcm" />
     </React.Fragment>
   );
 }
 
-export default OHIFLogo;
+export default MCMLogo;

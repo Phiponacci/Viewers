@@ -62,7 +62,7 @@ project's folder. It should roughly resemble the following:
 ```
 
 By default, the build output will connect to OHIF's publicly accessible PACS. If
-this is your first time setting up the OHIF Viewer, it is recommended that you
+this is your first time setting up the MCM RIS Viewer, it is recommended that you
 test with these default settings. After testing, you can find instructions on
 how to configure the project for your own imaging archive below.
 

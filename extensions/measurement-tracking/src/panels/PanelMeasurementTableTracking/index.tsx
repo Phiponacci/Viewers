@@ -13,6 +13,7 @@ import { useDebounce } from '@hooks';
 import ActionButtons from './ActionButtons';
 import { useTrackedMeasurements } from '../../getContextModule';
 import debounce from 'lodash.debounce';
+import { getI18n, useTranslation } from 'react-i18next'
 
 const { downloadCSVReport } = utils;
 const { formatDate } = utils;
@@ -150,7 +151,7 @@ function PanelMeasurementTableTracking({ servicesManager, extensionManager }) {
       }
       uiDialogService.dismiss({ id: 'enter-annotation' });
     };
-
+    const i18n = getI18n();
     uiDialogService.create({
       id: 'enter-annotation',
       centralize: true,
@@ -172,9 +173,10 @@ function PanelMeasurementTableTracking({ servicesManager, extensionManager }) {
               onSubmitHandler({ value, action: { id: 'save' } });
             }
           };
+
           return (
             <Input
-              label="Enter your annotation"
+              label={i18n.t('Dialog:Enter your annotation')}
               labelClassName="text-white grow text-[14px] leading-[1.2]"
               autoFocus
               id="annotation"
@@ -187,8 +189,8 @@ function PanelMeasurementTableTracking({ servicesManager, extensionManager }) {
           );
         },
         actions: [
-          { id: 'cancel', text: 'Cancel', type: ButtonEnums.type.secondary },
-          { id: 'save', text: 'Save', type: ButtonEnums.type.primary },
+          { id: 'cancel', text: i18n.t("Common:Cancel"), type: ButtonEnums.type.secondary },
+          { id: 'save', text: i18n.t("Common:Save"), type: ButtonEnums.type.primary },
         ],
         onSubmit: onSubmitHandler,
       },
@@ -275,6 +277,7 @@ PanelMeasurementTableTracking.propTypes = {
 
 // TODO: This could be a measurementService mapper
 function _mapMeasurementToDisplay(measurement, types, displaySetService) {
+  const i18n = getI18n()
   const { referenceStudyUID, referenceSeriesUID, SOPInstanceUID } = measurement;
 
   // TODO: We don't deal with multiframe well yet, would need to update
@@ -303,7 +306,7 @@ function _mapMeasurementToDisplay(measurement, types, displaySetService) {
   } = measurement;
 
   const firstSite = findingSites?.[0];
-  const label = baseLabel || finding?.text || firstSite?.text || '(empty)';
+  const label = baseLabel || finding?.text || firstSite?.text || `(${i18n.t("Common:empty")})`;
   let displayText = baseDisplayText || [];
   if (findingSites) {
     const siteText = [];

@@ -10,7 +10,7 @@ This repository uses `CircleCI` and `Netlify` for Continuous integration.
 ## Deploy Previews
 
 [Netlify Deploy previews][deploy-previews] are generated for every pull request.
-They allow pull request authors and reviewers to "Preview" the OHIF Viewer as if
+They allow pull request authors and reviewers to "Preview" the MCM RIS Viewer as if
 the changes had been merged.
 
 Deploy previews can be configured by modifying the `netlify.toml` file in the
@@ -46,7 +46,7 @@ be tested with the Google Adapter before merging to `master`.
 
 ### Workflow: DEPLOY
 
-The DEPLOY workflow deploys the OHIF Viewer when changes are merged to master.
+The DEPLOY workflow deploys the MCM RIS Viewer when changes are merged to master.
 It uses the Netlify CLI to deploy assets created as part of the repository's PWA
 Build process (`yarn run build`). The workflow allows for "Manual Approval" to
 promote the build to `STAGING` and `PRODUCTION` environments.

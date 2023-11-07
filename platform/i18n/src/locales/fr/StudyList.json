@@ -1,0 +1,19 @@
+{
+  "AccessionNumber": "Accession #",
+  "ClearFilters": "Effacer les Filters",
+  "Description": "Description",
+  "Empty": "Vide",
+  "Instances": "Instances",
+  "MRN": "MRN",
+  "NumOfStudiesHiggerThan100Message": "Filtrez la liste sur 100 études ou moins pour activer le tri",
+  "Modality": "Modalité",
+  "PatientName": "Nom de Patient",
+  "Previous": "< Retour",
+  "Page": "Page",
+  "Next": "Suivant >",
+  "ResultsPerPage": "Resultas par page",
+  "Studies": "Etudes",
+  "StudyDate": "Date d'étude",
+  "StudyDescription": "Description",
+  "StudyList": "Liste des Etudes"
+}

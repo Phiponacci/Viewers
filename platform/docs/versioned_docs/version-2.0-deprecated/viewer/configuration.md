@@ -5,7 +5,7 @@ sidebar_label: Configuration
 
 # Viewer: Configuration
 
-The OHIF Viewer Platform strives to be highly configurable and extensible. This
+The MCM RIS Viewer Platform strives to be highly configurable and extensible. This
 makes it easier for our community members to keep their "secret sauce" private,
 and incentivises contributions back to the platform. The `@ohif/viewer` project
 of the platform is the lynchpin that combines everything to create our
@@ -50,7 +50,7 @@ window.config = {
     },
   },
   /**
-   * Internally, the OHIF Viewer fetches data primarily with the
+   * Internally, the MCM RIS Viewer fetches data primarily with the
    * `cornerstoneWADOImageLoader` and the `DICOMWebClient`. If either of these
    * receive a non-200 response, this method allows you to handle that error.
    *

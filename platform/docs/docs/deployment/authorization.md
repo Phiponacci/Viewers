@@ -4,7 +4,7 @@ sidebar_label: Authorization
 ---
 
 # Authorization
-The OHIF Viewer can be configured to work with authorization servers that support one or more of the OpenID-Connect authorization flows. The Viewer finds it's OpenID-Connect settings on the oidc configuration key. You can set these values in your configuration files. For instance you can take a look at our
+The MCM RIS Viewer can be configured to work with authorization servers that support one or more of the OpenID-Connect authorization flows. The Viewer finds it's OpenID-Connect settings on the oidc configuration key. You can set these values in your configuration files. For instance you can take a look at our
 `google.js` configuration file.
 
 

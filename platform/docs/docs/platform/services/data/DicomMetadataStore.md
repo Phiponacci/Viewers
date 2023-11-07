@@ -8,7 +8,7 @@ sidebar_label: DICOM Metadata Store
 ## Overview
 `DicomMetaDataStore` is the central location that stores the metadata in `OHIF-v3`. There
 are several APIs to add study/series/instance metadata and also for getting from the store.
-DataSource utilize the `DicomMetaDataStore` to add the retrieved metadata to `OHIF Viewer`.
+DataSource utilize the `DicomMetaDataStore` to add the retrieved metadata to `MCM RIS Viewer`.
 
 > In `OHIF-v3` we have significantly changed the architecture of the metadata storage to
 > provide a much cleaner way of handling metadata-related tasks and services. Classes such as

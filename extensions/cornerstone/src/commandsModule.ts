@@ -18,6 +18,7 @@ import toggleStackImageSync from './utils/stackSync/toggleStackImageSync';
 import { getFirstAnnotationSelected } from './utils/measurementServiceMappings/utils/selection';
 import getActiveViewportEnabledElement from './utils/getActiveViewportEnabledElement';
 import { CornerstoneServices } from './types';
+import i18n from '@ohif/i18n';
 
 function commandsModule({
   servicesManager,
@@ -295,8 +296,9 @@ function commandsModule({
         if (!activeViewportToolGroup._toolInstances.Crosshairs) {
           uiNotificationService.show({
             title: 'Crosshairs',
-            message:
-              'You need to be in a MPR view to use Crosshairs. Click on MPR button in the toolbar to activate it.',
+            message: i18n.t(
+              'Notification:You need to be in a MPR view to use Crosshairs. Click on MPR button in the toolbar to activate it.'
+            ),
             type: 'info',
             duration: 3000,
           });
@@ -362,8 +364,8 @@ function commandsModule({
       if (!cornerstoneViewportService.getCornerstoneViewport(activeViewportId)) {
         // Cannot download a non-cornerstone viewport (image).
         uiNotificationService.show({
-          title: 'Download Image',
-          message: 'Image cannot be downloaded',
+          title: i18n.t('Notification:Download Image'),
+          message: i18n.t('Notification:Image cannot be downloaded'),
           type: 'error',
         });
         return;
@@ -374,7 +376,7 @@ function commandsModule({
       if (uiModalService) {
         uiModalService.show({
           content: CornerstoneViewportDownloadForm,
-          title: 'Download High Quality Image',
+          title: i18n.t('Dialog:Download High Quality Image'),
           contentProps: {
             activeViewportId,
             onClose: uiModalService.hide,

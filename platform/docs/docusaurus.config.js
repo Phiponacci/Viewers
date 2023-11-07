@@ -284,9 +284,9 @@ module.exports = {
       navbar: {
         hideOnScroll: false,
         logo: {
-          alt: 'OHIF Logo',
-          src: 'img/ohif-logo-light.svg',
-          srcDark: 'img/ohif-logo.svg',
+          alt: 'MCM Logo',
+          src: 'img/mcm-logo-light.svg',
+          srcDark: 'img/mcm-logo.svg',
         },
         items: [
           {
@@ -422,7 +422,7 @@ module.exports = {
           },
         ],
         logo: {
-          alt: 'OHIF ',
+          alt: 'MCM',
           src: 'img/netlify-color-accent.svg',
           href: 'https://viewer.ohif.org/',
         },

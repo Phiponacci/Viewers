@@ -52,7 +52,7 @@ Images can even be transcoded on the fly if this is desired.
 
 1. Open the `config/google.js` file and change `YOURCLIENTID` to your Client ID
    value.
-1. Run the OHIF Viewer using the config/google.js configuration file
+1. Run the MCM RIS Viewer using the config/google.js configuration file
 
 ```bash
 cd OHIFViewer
@@ -62,7 +62,7 @@ APP_CONFIG=config/google.js yarn run dev
 
 ## Running via Docker
 
-The OHIF Viewer Docker container can be connected to Google Cloud Healthcare by
+The MCM RIS Viewer Docker container can be connected to Google Cloud Healthcare by
 providing a Client ID at runtime. This is a very simple method to get up and
 running.
 

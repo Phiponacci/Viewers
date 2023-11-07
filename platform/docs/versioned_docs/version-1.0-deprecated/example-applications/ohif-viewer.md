@@ -1,1 +1,1 @@
-# OHIF Viewer
+# MCM RIS Viewer

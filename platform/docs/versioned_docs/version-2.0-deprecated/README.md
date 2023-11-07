@@ -7,7 +7,7 @@ sidebar_position: 1
 <!-- <div class='row'>
 	<div class='column' style='text-align: right; padding: 0 20px'>
 		<strong>Looking for a Live Demo?</strong>
-		<a href="http://viewer.ohif.org/">Preview The OHIF Viewer</a>
+		<a href="http://viewer.ohif.org/">Preview The MCM RIS Viewer</a>
 	</div>
 	<div class='column' style='text-align: left; padding: 0 20px'>
 		<a href="https://www.netlify.com">
@@ -23,7 +23,7 @@ sidebar_position: 1
 <!-- <a href="https://www.netlify.com"> -->
 
 <div className="text--center">
-<a style={{marginRight:'10px'}} href="http://viewer.ohif.org/">Preview The OHIF Viewer</a>
+<a style={{marginRight:'10px'}} href="http://viewer.ohif.org/">Preview The MCM RIS Viewer</a>
 <a href="https://www.netlify.com"/>
   <img style={{width:'70px'}} src="https://www.netlify.com/img/global/badges/netlify-color-bg.svg" />
 </div>
@@ -43,9 +43,9 @@ Archives that support [DicomWeb][dicom-web], and offers support for mapping to
 proprietary API formats. OHIF maintained extensions add support for viewing,
 annotating, and reporting on DICOM images in 2D (slices) and 3D (volumes).
 
-![OHIF Viewer Screenshot](./assets/img/viewer.png)
+![MCM RIS Viewer Screenshot](./assets/img/viewer.png)
 
-<center>The <strong>OHIF Viewer</strong>: A general purpose DICOM Viewer (<a href="http://viewer.ohif.org/">Live Demo</a>)</center>
+<center>The <strong>MCM RIS Viewer</strong>: A general purpose DICOM Viewer (<a href="http://viewer.ohif.org/">Live Demo</a>)</center>
 
 The Open Health Imaging Foundation intends to provide a simple general purpose
 DICOM Viewer which can be easily extended for specific uses. If you find

@@ -324,7 +324,7 @@ Expected result:
 
 <!-- ![image alt text](image_23.png) -->
 
-## Starting OHIF Viewer after system restart
+## Starting MCM RIS Viewer after system restart
 
 These are the steps to run OHIFVIewer after system restart:.
 
@@ -338,7 +338,7 @@ docker-compose -p dcm4chee start
 
 4. Access the Viewers/OHIFViewer folder, on your Home folder
 
-5. Run the following command in order to run OHIF Viewer:
+5. Run the following command in order to run MCM RIS Viewer:
 
 ./bin/dcm4cheeDICOMWeb.sh
 

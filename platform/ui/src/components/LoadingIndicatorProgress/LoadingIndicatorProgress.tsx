@@ -19,7 +19,7 @@ function LoadingIndicatorProgress({ className, textBlock, progress }) {
       )}
     >
       <Icon
-        name="loading-ohif-mark"
+        name="loading-mcm-mark"
         className="h-12 w-12 text-white"
       />
       <div className="w-48">

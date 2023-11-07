@@ -37,4 +37,4 @@ If you would like to add SVG logo to header please follow these steps.
  ```
 
 
- For example, see how it works in [OHIF Viewer](https://github.com/OHIF/Viewers/blob/master/OHIFViewer/client/components/ohifViewer/ohifViewer.html#L2)
+ For example, see how it works in [MCM RIS Viewer](https://github.com/OHIF/Viewers/blob/master/OHIFViewer/client/components/ohifViewer/ohifViewer.html#L2)

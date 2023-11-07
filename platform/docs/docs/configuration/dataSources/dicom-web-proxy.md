@@ -5,7 +5,7 @@ sidebar_label: DICOMweb Proxy
 
 # DICOMweb Proxy
 
-You can launch the OHIF Viewer with a url that returns a JSON file which
+You can launch the MCM RIS Viewer with a url that returns a JSON file which
 contains a DICOMWeb configuration. The DICOMweb Proxy constructs a DICOMweb
 datasource and delegates subsequent requests for metadata and images to that.
 

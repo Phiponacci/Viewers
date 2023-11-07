@@ -1,5 +1,6 @@
 import dcmjs from 'dcmjs';
 import moment from 'moment';
+import { useTranslation } from 'react-i18next';
 import React, { useState, useMemo, useEffect } from 'react';
 import { classes } from '@ohif/core';
 import { InputRange, Select, Typography, InputFilterText } from '@ohif/ui';
@@ -106,6 +107,8 @@ const DicomTagBrowser = ({ displaySets, displaySetInstanceUID }) => {
     };
   }, []);
 
+  const { t } = useTranslation('DicomTagBrowser');
+
   return (
     <div className="dicom-tag-browser-content">
       <div className="mb-6 flex flex-row items-center pl-1">
@@ -114,7 +117,7 @@ const DicomTagBrowser = ({ displaySets, displaySetInstanceUID }) => {
             variant="subtitle"
             className="mr-4"
           >
-            Series
+            {t("Series")}
           </Typography>
           <div className="mr-8 grow">
             <Select
@@ -133,7 +136,7 @@ const DicomTagBrowser = ({ displaySets, displaySetInstanceUID }) => {
               variant="subtitle"
               className="mr-4"
             >
-              Instance Number
+              {t('Instance Number')}
             </Typography>
           )}
           {showInstanceList && (
@@ -159,7 +162,7 @@ const DicomTagBrowser = ({ displaySets, displaySetInstanceUID }) => {
       <div className="my-3 flex w-1/2 flex-row">
         <InputFilterText
           className="mr-8 block w-full"
-          placeholder="Search metadata..."
+          placeholder={t('Search metadata') + "..."}
           onDebounceChange={setFilterValue}
         ></InputFilterText>
       </div>

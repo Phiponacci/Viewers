@@ -1,3 +1,5 @@
+import i18n from '@ohif/i18n';
+
 const defaultContextMenu = {
   id: 'measurementsContextMenu',
   customizationType: 'ohif.contextMenu',
@@ -8,7 +10,7 @@ const defaultContextMenu = {
       selector: ({ nearbyToolData }) => !!nearbyToolData,
       items: [
         {
-          label: 'Delete measurement',
+          label: i18n.t('Buttons:Delete measurement'),
           commands: [
             {
               commandName: 'deleteMeasurement',
@@ -16,7 +18,7 @@ const defaultContextMenu = {
           ],
         },
         {
-          label: 'Add Label',
+          label: i18n.t('Buttons:Add Label'),
           commands: [
             {
               commandName: 'setMeasurementLabel',

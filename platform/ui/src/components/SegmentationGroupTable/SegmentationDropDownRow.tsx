@@ -1,6 +1,7 @@
 import React from 'react';
 import { Select, Icon, Dropdown } from '../../components';
 import PropTypes from 'prop-types';
+import { useTranslation } from "react-i18next"
 
 function SegmentationDropDownRow({
   segmentations = [],
@@ -27,7 +28,7 @@ function SegmentationDropDownRow({
   if (!activeSegmentation) {
     return null;
   }
-
+  const { t } = useTranslation("MeasurementTable");
   return (
     <div className="group mx-0.5 mt-[8px] flex items-center">
       <div
@@ -45,49 +46,49 @@ function SegmentationDropDownRow({
           list={[
             ...(!disableEditing
               ? [
-                  {
-                    title: 'Add New Segmentation',
-                    onClick: () => {
-                      onSegmentationAdd();
-                    },
+                {
+                  title: t('Add New Segmentation'),
+                  onClick: () => {
+                    onSegmentationAdd();
                   },
-                ]
+                },
+              ]
               : []),
             ...(!disableEditing
               ? [
-                  {
-                    title: 'Rename',
-                    onClick: () => {
-                      onSegmentationEdit(activeSegmentation.id);
-                    },
+                {
+                  title: t('Rename'),
+                  onClick: () => {
+                    onSegmentationEdit(activeSegmentation.id);
                   },
-                ]
+                },
+              ]
               : []),
             {
-              title: 'Delete',
+              title: t('Delete'),
               onClick: () => {
                 onSegmentationDelete(activeSegmentation.id);
               },
             },
             ...(!disableEditing
               ? [
-                  {
-                    title: 'Export DICOM SEG',
-                    onClick: () => {
-                      storeSegmentation(activeSegmentation.id);
-                    },
+                {
+                  title: t('Export DICOM SEG'),
+                  onClick: () => {
+                    storeSegmentation(activeSegmentation.id);
                   },
-                ]
+                },
+              ]
               : []),
             ...[
               {
-                title: 'Download DICOM SEG',
+                title: t('Download DICOM SEG'),
                 onClick: () => {
                   onSegmentationDownload(activeSegmentation.id);
                 },
               },
               {
-                title: 'Download DICOM RTSTRUCT',
+                title: t('Download DICOM RTSTRUCT'),
                 onClick: () => {
                   onSegmentationDownloadRTSS(activeSegmentation.id);
                 },

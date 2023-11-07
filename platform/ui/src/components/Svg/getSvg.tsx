@@ -1,9 +1,9 @@
 import React from 'react';
 // Svgs
-import logoOhif from './../../assets/svgs/logo-ohif.svg';
+import mcmLogo from './../../assets/svgs/mcm-logo.svg';
 
 const SVGS = {
-  'logo-ohif': logoOhif,
+  'logo-mcm': mcmLogo,
 };
 
 /**
@@ -12,6 +12,8 @@ const SVGS = {
  * return `null`
  */
 export default function getSvg(key, props) {
+  console.log(key, SVGS[key]);
+
   if (!key || !SVGS[key]) {
     return React.createElement('div', null, 'Missing SVG');
   }

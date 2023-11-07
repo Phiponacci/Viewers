@@ -2,6 +2,7 @@ import { hotkeys } from '@ohif/core';
 
 import { id } from './id';
 import toolbarButtons from './toolbarButtons';
+import i18n from '@ohif/i18n';
 
 const ohif = {
   layout: '@ohif/extension-default.layoutTemplateModule.viewerLayout',
@@ -41,7 +42,7 @@ function modeFactory({ modeConfiguration }) {
     // We should not be.
     id,
     routeName: 'microscopy',
-    displayName: 'Microscopy',
+    displayName: i18n.t("Modes:Microscopy"),
 
     /**
      * Lifecycle hooks

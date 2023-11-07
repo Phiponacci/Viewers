@@ -1,3 +1,7 @@
+import { getI18n } from 'react-i18next';
+
+const i18n = getI18n();
+
 const RESPONSE = {
   NO_NEVER: -1,
   CANCEL: 0,
@@ -32,17 +36,17 @@ function promptTrackNewStudy({ servicesManager, extensionManager }, ctx, evt) {
 
 function _askTrackMeasurements(UIViewportDialogService, viewportId) {
   return new Promise(function (resolve, reject) {
-    const message = 'Track measurements for this series?';
+    const message = i18n.t('MeasurementTable:Track measurements for this series?');
     const actions = [
       { type: 'cancel', text: 'No', value: RESPONSE.CANCEL },
       {
         type: 'secondary',
-        text: 'No, do not ask again for this series',
+        text: i18n.t('Dialog:No, do not ask again for this series'),
         value: RESPONSE.NO_NOT_FOR_SERIES,
       },
       {
         type: 'primary',
-        text: 'Yes',
+        text: i18n.t('Common:Yes'),
         value: RESPONSE.SET_STUDY_AND_SERIES,
       },
     ];
@@ -67,18 +71,19 @@ function _askTrackMeasurements(UIViewportDialogService, viewportId) {
 
 function _askSaveDiscardOrCancel(UIViewportDialogService, viewportId) {
   return new Promise(function (resolve, reject) {
-    const message =
-      'Measurements cannot span across multiple studies. Do you want to save your tracked measurements?';
+    const message = i18n.t(
+      'Dialog:Measurements cannot span across multiple studies. Do you want to save your tracked measurements?'
+    );
     const actions = [
-      { type: 'cancel', text: 'Cancel', value: RESPONSE.CANCEL },
+      { type: 'cancel', text: i18n.t('Common:Cancel'), value: RESPONSE.CANCEL },
       {
         type: 'secondary',
-        text: 'No, discard previously tracked series & measurements',
+        text: i18n.t('Dialog:No, discard previously tracked series & measurements'),
         value: RESPONSE.SET_STUDY_AND_SERIES,
       },
       {
         type: 'primary',
-        text: 'Yes',
+        text: i18n.t('Common:Yes'),
         value: RESPONSE.CREATE_REPORT,
       },
     ];

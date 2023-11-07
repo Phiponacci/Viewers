@@ -10,7 +10,7 @@ sidebar_label: Getting Started
 ### Fork & Clone
 
 If you intend to contribute back changes, or if you would like to pull updates
-we make to the OHIF Viewer, then follow these steps:
+we make to the MCM RIS Viewer, then follow these steps:
 
 - [Fork][fork-a-repo] the [OHIF/Viewers][ohif-viewers-repo] repository
 - [Create a local clone][clone-a-repo] of your fork
@@ -27,7 +27,7 @@ graphic that illustrates this setup][triangular-workflow].
 
 ### Private
 
-Alternatively, if you intend to use the OHIF Viewer as a starting point, and you
+Alternatively, if you intend to use the MCM RIS Viewer as a starting point, and you
 aren't as concerned with syncing updates, then follow these steps:
 
 1. Navigate to the [OHIF/Viewers][ohif-viewers] repository

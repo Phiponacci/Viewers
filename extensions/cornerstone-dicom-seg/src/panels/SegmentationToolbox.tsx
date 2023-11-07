@@ -2,6 +2,7 @@ import React, { useCallback, useEffect, useState, useReducer } from 'react';
 import { AdvancedToolbox, InputDoubleRange, useViewportGrid } from '@ohif/ui';
 import { Types } from '@ohif/extension-cornerstone';
 import { utilities } from '@cornerstonejs/tools';
+import { useTranslation } from 'react-i18next';
 
 const { segmentation: segmentationUtils } = utilities;
 
@@ -231,13 +232,13 @@ function SegmentationToolbox({ servicesManager, extensionManager }) {
     },
     [toolGroupService, dispatch, state.ThresholdBrush.thresholdRange]
   );
-
+  const { t } = useTranslation("MeasurementTable")
   return (
     <AdvancedToolbox
-      title="Segmentation Tools"
+      title={t("Segmentation Tools")}
       items={[
         {
-          name: 'Brush',
+          name: t("Brush"),
           icon: 'icon-tool-brush',
           disabled: !toolsEnabled,
           active:
@@ -246,7 +247,7 @@ function SegmentationToolbox({ servicesManager, extensionManager }) {
           onClick: () => setToolActive(TOOL_TYPES.CIRCULAR_BRUSH),
           options: [
             {
-              name: 'Radius (mm)',
+              name: t('Radius (mm)'),
               id: 'brush-radius',
               type: 'range',
               min: 0.5,
@@ -261,15 +262,15 @@ function SegmentationToolbox({ servicesManager, extensionManager }) {
               id: 'brush-mode',
               value: state.Brush.mode,
               values: [
-                { value: TOOL_TYPES.CIRCULAR_BRUSH, label: 'Circle' },
-                { value: TOOL_TYPES.SPHERE_BRUSH, label: 'Sphere' },
+                { value: TOOL_TYPES.CIRCULAR_BRUSH, label: t("Circle") },
+                { value: TOOL_TYPES.SPHERE_BRUSH, label: t('Sphere') },
               ],
               onChange: value => setToolActive(value),
             },
           ],
         },
         {
-          name: 'Eraser',
+          name: t('Eraser'),
           icon: 'icon-tool-eraser',
           disabled: !toolsEnabled,
           active:
@@ -278,7 +279,7 @@ function SegmentationToolbox({ servicesManager, extensionManager }) {
           onClick: () => setToolActive(TOOL_TYPES.CIRCULAR_ERASER),
           options: [
             {
-              name: 'Radius (mm)',
+              name: t('Radius (mm)'),
               type: 'range',
               id: 'eraser-radius',
               min: 0.5,
@@ -293,15 +294,15 @@ function SegmentationToolbox({ servicesManager, extensionManager }) {
               id: 'eraser-mode',
               value: state.Eraser.mode,
               values: [
-                { value: TOOL_TYPES.CIRCULAR_ERASER, label: 'Circle' },
-                { value: TOOL_TYPES.SPHERE_ERASER, label: 'Sphere' },
+                { value: TOOL_TYPES.CIRCULAR_ERASER, label: t("Circle") },
+                { value: TOOL_TYPES.SPHERE_ERASER, label: t('Sphere') },
               ],
               onChange: value => setToolActive(value),
             },
           ],
         },
         {
-          name: 'Shapes',
+          name: t('Shapes'),
           icon: 'icon-tool-shape',
           disabled: !toolsEnabled,
           active:
@@ -316,16 +317,16 @@ function SegmentationToolbox({ servicesManager, extensionManager }) {
               value: state.Shapes.mode,
               id: 'shape-mode',
               values: [
-                { value: TOOL_TYPES.CIRCLE_SHAPE, label: 'Circle' },
+                { value: TOOL_TYPES.CIRCLE_SHAPE, label: t('Circle') },
                 { value: TOOL_TYPES.RECTANGLE_SHAPE, label: 'Rectangle' },
-                { value: TOOL_TYPES.SPHERE_SHAPE, label: 'Sphere' },
+                { value: TOOL_TYPES.SPHERE_SHAPE, label: t('Sphere') },
               ],
               onChange: value => setToolActive(value),
             },
           ],
         },
         {
-          name: 'Threshold Tool',
+          name: t('Threshold Tool'),
           icon: 'icon-tool-threshold',
           disabled: !toolsEnabled,
           active:
@@ -334,7 +335,7 @@ function SegmentationToolbox({ servicesManager, extensionManager }) {
           onClick: () => setToolActive(TOOL_TYPES.THRESHOLD_CIRCULAR_BRUSH),
           options: [
             {
-              name: 'Radius (mm)',
+              name: t('Radius (mm)'),
               id: 'threshold-radius',
               type: 'range',
               min: 0.5,
@@ -349,8 +350,8 @@ function SegmentationToolbox({ servicesManager, extensionManager }) {
               id: 'threshold-mode',
               value: state.activeTool,
               values: [
-                { value: TOOL_TYPES.THRESHOLD_CIRCULAR_BRUSH, label: 'Circle' },
-                { value: TOOL_TYPES.THRESHOLD_SPHERE_BRUSH, label: 'Sphere' },
+                { value: TOOL_TYPES.THRESHOLD_CIRCULAR_BRUSH, label: t('Circle') },
+                { value: TOOL_TYPES.THRESHOLD_SPHERE_BRUSH, label: t('Sphere') },
               ],
               onChange: value => setToolActive(value),
             },
@@ -361,7 +362,7 @@ function SegmentationToolbox({ servicesManager, extensionManager }) {
                 return (
                   <div>
                     <div className="bg-secondary-light h-[1px]"></div>
-                    <div className="mt-1 text-[13px] text-white">Threshold</div>
+                    <div className="mt-1 text-[13px] text-white">{t('Threshold')}</div>
                     <InputDoubleRange
                       values={state.ThresholdBrush.thresholdRange}
                       onChange={handleRangeChange}

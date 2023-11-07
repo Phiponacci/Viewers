@@ -30,7 +30,7 @@ import launchInfo from './../../assets/icons/launch-info.svg';
 import link from './../../assets/icons/link.svg';
 import listBullets from './../../assets/icons/list-bullets.svg';
 import lock from './../../assets/icons/lock.svg';
-import logoOhifSmall from './../../assets/icons/logo-ohif-small.svg';
+import logoMCMSmall from './../../assets/icons/logo-mcm-small.svg';
 import magnifier from './../../assets/icons/magnifier.svg';
 import notificationwarningDiamond from './../../assets/icons/notificationwarning-diamond.svg';
 import pencil from './../../assets/icons/pencil.svg';
@@ -78,7 +78,7 @@ import uiArrowDown from './../../assets/icons/ui-arrow-down.svg';
 import uiArrowUp from './../../assets/icons/ui-arrow-up.svg';
 import uiArrowLeft from './../../assets/icons/ui-arrow-left.svg';
 import uiArrowRight from './../../assets/icons/ui-arrow-right.svg';
-import loadingOHIFMark from './../../assets/icons/loading-ohif-mark.svg';
+import loadingMCMMark from './../../assets/icons/loading-mcm-mark.svg';
 import notificationsInfo from './../../assets/icons/notifications-info.svg';
 import notificationsWarning from './../../assets/icons/notifications-warning.svg';
 import notificationsError from './../../assets/icons/notifications-error.svg';
@@ -183,7 +183,7 @@ const ICONS = {
   link: link,
   'list-bullets': listBullets,
   lock: lock,
-  'logo-ohif-small': logoOhifSmall,
+  'logo-mcm-small': logoMCMSmall,
   magnifier: magnifier,
   exclamation: exclamation,
   'notificationwarning-diamond': notificationwarningDiamond,
@@ -215,7 +215,7 @@ const ICONS = {
   'row-unlock': rowUnlock,
   'checkbox-checked': checkboxChecked,
   'checkbox-unchecked': checkboxUnchecked,
-  'loading-ohif-mark': loadingOHIFMark,
+  'loading-mcm-mark': loadingMCMMark,
   'notifications-info': notificationsInfo,
   'notifications-error': notificationsError,
   'notifications-success': notificationsSuccess,

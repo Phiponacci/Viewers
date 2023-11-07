@@ -36,7 +36,7 @@ An alternative to deploying your own PACS is to use a software-as-a-service prov
 ## Run the viewer with your OAuth Client ID
 
 1. Open the `config/oidc-googleCloud.json` file and change `YOURCLIENTID` to your Client ID value.
-1. Run the OHIF Viewer using the oidc-googleCloud.json configuration file
+1. Run the MCM RIS Viewer using the oidc-googleCloud.json configuration file
 
 ````bash
 cd OHIFViewer
@@ -71,7 +71,7 @@ cd Viewers
 npm install -g meteor-build-client-fixed2
 ```
 
-1. Build the Standalone client-only OHIF Viewer
+1. Build the Standalone client-only MCM RIS Viewer
 ```bash
 cd OHIFViewer/
 METEOR_PACKAGE_DIRS="../Packages" meteor npm install

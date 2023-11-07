@@ -2,5 +2,10 @@
   "Cancel": "$t(Buttons:Cancel)",
   "Reset to Defaults": "$t(Buttons:Reset to Defaults)",
   "Save": "$t(Buttons:Save)",
-  "User Preferences": "Préférences utilisateur"
+  "User Preferences": "Préférences utilisateur",
+  "Language": "Langue",
+  "Hotkeys": "Raccourcis clavier",
+  "Function": "Fonction",
+  "Shortcut": "Raccourci",
+  "General": "Générale"
 }

@@ -5,12 +5,12 @@ title: Architecture
 
 # Architecture
 
-Looking to extend your instance of the OHIF Viewer? Want learn how to reuse _a
+Looking to extend your instance of the MCM RIS Viewer? Want learn how to reuse _a
 portion_ of the Viewer in your own application? Or maybe you want to get
 involved and draft or suggest a new feature? Regardless, you're in the right
 place!
 
-The OHIF Viewer aims to be decoupled, configurable, and extensible; while this
+The MCM RIS Viewer aims to be decoupled, configurable, and extensible; while this
 allows our code to be used in more ways, it also increases complexity. Below, we
 aim to demistify that complexity by providing insight into how our Viewer is
 architected, and the role each of it's dependent libraries plays.
@@ -86,7 +86,7 @@ Vue, React, Vanilla JS, or any number of other frameworks.
 ## React Component Library
 
 [`@ohif/ui`][ui-github] is a React Component library that contains the reusable
-components that power the OHIF Viewer. It allows us to build, compose, and test
+components that power the MCM RIS Viewer. It allows us to build, compose, and test
 components in isolation; easing the development process by reducing the need to
 stand-up a local PACS with test case data.
 

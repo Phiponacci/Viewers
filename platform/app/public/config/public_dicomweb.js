@@ -1,4 +1,32 @@
 window.config = {
+  whiteLabeling: {
+    createLogoComponentFn: function (React) {
+      return React.createElement(
+        'a',
+        {
+          target: '_self',
+          rel: 'noopener noreferrer',
+          className: 'no-underline',
+          href: '/',
+        },
+        React.createElement(
+          'span',
+          null,
+          React.createElement('img', {
+            src: './mcm-logo.svg',
+            className: 'w-8 h-8 inline',
+          }),
+          React.createElement(
+            'span',
+            {
+              className: 'text-white p-2 font-bold',
+            },
+            'MCM RIS Viewer'
+          )
+        )
+      );
+    },
+  },
   routerBasename: '/',
   showStudyList: true,
   // below flag is for performance reasons, but it might not work for all servers

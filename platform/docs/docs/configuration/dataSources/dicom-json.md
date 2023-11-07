@@ -5,7 +5,7 @@ sidebar_label: DICOM JSON
 
 # DICOM JSON
 
-You can launch the OHIF Viewer with a JSON file which points to a DICOMWeb
+You can launch the MCM RIS Viewer with a JSON file which points to a DICOMWeb
 server as well as a list of study and series instance UIDs along with metadata.
 
 An example would look like

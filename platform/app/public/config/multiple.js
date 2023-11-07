@@ -1,7 +1,34 @@
 window.config = {
   // Activate the new HP mode....
   isNewHP: true,
-
+  whiteLabeling: {
+    createLogoComponentFn: function (React) {
+      return React.createElement(
+        'a',
+        {
+          target: '_self',
+          rel: 'noopener noreferrer',
+          className: 'no-underline',
+          href: '/',
+        },
+        React.createElement(
+          'span',
+          null,
+          React.createElement('img', {
+            src: './mcm-logo.svg',
+            className: 'w-8 h-8 inline',
+          }),
+          React.createElement(
+            'span',
+            {
+              className: 'text-white p-2 font-bold',
+            },
+            'MCM RIS Viewer'
+          )
+        )
+      );
+    },
+  },
   routerBasename: '/',
   customizationService: [
     '@ohif/extension-default.customizationModule.datasources',
