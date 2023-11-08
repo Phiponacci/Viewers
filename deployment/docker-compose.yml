@@ -62,7 +62,7 @@ services:
       - '80:80'
     volumes:
       # Nginx config
-      - ./nginx-proxy/conf/nginx.conf:/etc/nginx/nginx.conf:ro
+      #- ./nginx-proxy/conf/nginx.conf:/etc/nginx/nginx.conf:ro
       # Logs
       - ./logs/nginx:/var/logs/nginx
       # Let's Encrypt
