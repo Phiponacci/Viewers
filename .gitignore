@@ -30,6 +30,8 @@ sampledata/
 example/deps/
 docker/dcm4che/dcm4che-arc
 
+deployment/dcm4che/dcm4che-arc
+
 # Cypress test results
 videos/
 screenshots/
